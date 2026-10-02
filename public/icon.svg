@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#eab308" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  
+  <!-- Outer Ring Accent -->
+  <rect x="24" y="24" width="464" height="464" rx="96" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-opacity="0.3" />
+
+  <!-- Main Folder / Archive Icon with Shield -->
+  <g filter="url(#shadow)" transform="translate(0, 8)">
+    <!-- Archive Base -->
+    <path d="M128 176 C128 160, 140 148, 156 148 L220 148 L252 180 L356 180 C372 180, 384 192, 384 208 L384 356 C384 372, 372 384, 356 384 L156 384 C140 384, 128 372, 128 356 Z" fill="#ffffff" fill-opacity="0.95" />
+    
+    <!-- Shield / Tax Badge -->
+    <path d="M256 210 L320 236 V290 C320 334 292 364 256 376 C220 364 192 334 192 290 V236 Z" fill="url(#bgGrad)" />
+    <path d="M256 220 L310 242 V288 C310 326 286 352 256 364 C226 352 202 326 202 288 V242 Z" fill="#1e3a8a" />
+
+    <!-- Tax Symbol % and Check -->
+    <circle cx="236" cy="270" r="10" fill="url(#goldGrad)" />
+    <circle cx="276" cy="310" r="10" fill="url(#goldGrad)" />
+    <line x1="280" y1="262" x2="232" y2="318" stroke="url(#goldGrad)" stroke-width="7" stroke-linecap="round" />
+  </g>
+
+  <!-- Bottom Label -->
+  <text x="256" y="440" font-family="system-ui, -apple-system, Cairo, Tajawal, sans-serif" font-size="34" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="1">أرشيف الضرائب</text>
+</svg>
